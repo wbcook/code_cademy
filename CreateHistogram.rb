@@ -1,4 +1,4 @@
-# User enters a string which is split into an array then added to a sorted Hash.
+# Reads a string and tells us how many times each word appears.
 puts "Enter historgram string: "
 text = gets.chomp
 
