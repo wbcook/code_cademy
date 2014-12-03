@@ -1,4 +1,3 @@
-# Create a bank account and display the balance or withdraw using a PIN.
 class Account
     attr_reader :name
     attr_reader :balance
@@ -32,4 +31,7 @@ class Account
 end
 
 checking_account = Account.new( "Wilson", 1_000_000 )
-checking_account.display(1234)
+checking_account.display_balance(1234)
+checking_account.withdraw(12, 50_000)
+checking_account.withdraw(1234, 50_000)
+checking_account.display_balance(1234)
